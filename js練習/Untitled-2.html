@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <!-- <link rel="stylesheet" href="Css/Untitled-1.css">
+  <script src="Js/Untitled-1.js"></script> -->
+  <link rel="stylesheet" href="bootstrap-5.0.0/css/bootstrap.css">
+  <script src="bootstrap-5.0.0/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="Scripts/jquery-3.6.0.min.js"></script>
+  <script src="Scripts/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script>
+    const wokeUP = (resolve, rehect)=>{
+      serTimeout(() => {
+        console.log("wake up!")
+        resolve()
+      }, 2000)
+    }
+    console.log("sleep")
+
+    new Promise(wokeUP)
+      .then(eating)
+      .catch(err => console.log(err))
+  </script>
+
+</head>
+
+<body style="background-color: #333;">
+  <!--  -->
+</body>
+
+</html>
